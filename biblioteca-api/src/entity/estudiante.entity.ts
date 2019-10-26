@@ -5,10 +5,10 @@ export class Estudiante {
      @PrimaryGeneratedColumn()
      Id: number;
 
-     @Column({length: 20})
+     @Column({length: 20,unique : true})
      CI: string;
 
-     @Column({length:250,unique : true})
+     @Column({length:250})
      Nombre: string;
 
      @Column({length:250})

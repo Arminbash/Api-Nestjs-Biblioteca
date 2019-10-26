@@ -4,12 +4,12 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AutorController } from './controller/autor/autor.controller';
 import { Autor } from './entity/autor.entity';
-import { AutorServiceService } from './sercive/autor-service/autor-service.service';
+import { AutorServiceService } from './service/autor-service/autor-service.service';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost:8080',
+      host: 'localhost',
       port: 3306,
       username: 'Arminbash',
       password: 'Holamundo2',
